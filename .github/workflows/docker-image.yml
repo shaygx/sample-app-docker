@@ -16,4 +16,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:latest
     - name: run docker
-      run: docker run -d -p 80:8085 my-image-name:latest 
+      run: docker run -d -p 8085:80 my-image-name:latest
+    - name: HelthCheck
+      run: curl 127.0.0.1:8085
