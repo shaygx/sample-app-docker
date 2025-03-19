@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag my-image-name:latest
     - name: run docker
-      run: docker run  my-image-name:$(date +%s) -p 8082:8082
+      run: docker run  my-image-name:latest -p 8082:8082
