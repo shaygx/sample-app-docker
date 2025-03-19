@@ -16,4 +16,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: run docker
-      run: docker run -it my-image-name:$(date +%s) -p 8082:8082
+      run: docker run  my-image-name:$(date +%s) -p 8082:8082
