@@ -18,4 +18,4 @@ jobs:
     - name: run docker
       run: docker run -d -p 8085:80 my-image-name:latest
     - name: HelthCheck
-      run: curl 127.0.0.1:8085
+      run: curl localhost:8085
