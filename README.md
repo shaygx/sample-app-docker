@@ -1,4 +1,4 @@
-# Demo Docker App
+# Demo Docker App - test
 
 This folder contains a Docker app that is meant to be used for demonstration
 purposes only. You should follow the example in this code in your own apps and
